@@ -9,14 +9,20 @@ export default {
         title: "Name"
         },
         {
+        name: "Image",
+        type: "image",
+        title: "Image"
+        },
+        {
         name: 'blurb',
-        type: 'string',
+        type: 'text',
         title: 'Blurb'
         },
         {
-        name: "art",
-        type: 'image',
-        title: "Art"        
+            name: 'imagesGallery',
+            title: 'Images gallery',
+            type: 'array',
+            of: [{ type: 'image' }]
         }
     ]
   }
