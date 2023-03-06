@@ -1,3 +1,5 @@
+import clippedLink from './clippedLink.js'
+
 export default {
     name: 'artist',
     type: 'document',
@@ -20,9 +22,59 @@ export default {
         },
         {
             name: 'imagesGallery',
-            title: 'Images gallery',
+            title: 'Gallery',
             type: 'array',
-            of: [{ type: 'image' }]
+            of: [
+                { 
+                    type: 'document',
+                    name: "work",
+                    fields: [
+                        {
+                            name: "image",
+                            type: "image"
+                        },
+                        {
+                            name: "blurb",
+                            type: "text"
+                        },
+                        {
+                            name: "title",
+                            type: "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            name: "socialLinks",
+            title: "Social Links",
+            type: 'array',
+            of: [
+                {
+                    name: 'link',
+                    type: 'document',
+                    fields: [
+                        {
+                            name: "type",
+                            type: 'string',
+                            title: "Type",
+                            options: {
+                                list: [ 
+                                  { title: 'Facebook', value: 'facebook'},
+                                  { title: 'Twitter', value: 'twitter' },
+                                  { title: "Instagram", value: "instagram"},
+                                  { title: "Pinterest", value: "pinterest"}
+                                ]
+                              }
+                        },
+                        {
+                            name: "url",
+                            title: "URL",
+                            type: "string"
+                        }
+                    ]
+                  }
+            ]
         }
     ]
   }
