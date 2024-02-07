@@ -17,6 +17,11 @@ export default {
             name: "image",
             type: "image",
             title: "Image"
+        },
+        {
+            name: "bio",
+            type: "text",
+            title: "Bio"
         }
     ]
   }
