@@ -13,28 +13,36 @@ export default {
             type: "image",
             title: "Visarts Logo"
         },
-        // {
-        //     name: "colorScheme",
-        //     type: "document",
-        //     title: "Color Scheme",
-        //     fields: [
-        //         {
-        //             name: "primary",
-        //             type: "color",
-        //             title: "Primary Color"
-        //         },
-        //         {
-        //             name: "secondary",
-        //             type: "color",
-        //             title: "Secondary Color"
-        //         },
-        //         {
-        //             name: "accent",
-        //             type: "color",
-        //             title: "Accent Color"
-        //         }
-        //     ]
-        // },
+        {
+            name: "socialLinks",
+            type: "array",
+            title: "Social Links",
+            of: [
+                {
+                    type: "document",
+                    fields: [
+                        {
+                            name: "type",
+                            type: "string",
+                            title: "Type",
+                            options: {
+                                list: [
+                                    { title: "Facebook", value: "facebook" },
+                                    { title: "Twitter", value: "twitter" },
+                                    { title: "Instagram", value: "instagram" },
+                                    { title: "Pinterest", value: "pinterest" }
+                                ]
+                            }
+                        },
+                        {
+                            name: "url",
+                            type: "string",
+                            title: "URL"
+                        }
+                    ]
+                }
+            ]
+        },
         {
             name: "image",
             type: 'image',
@@ -64,6 +72,16 @@ export default {
             name: "brownGalleryImage",
             type: "image",
             title: "Brown Gallery Image"
+        },
+        {
+            name: 'getInvolvedImage',
+            type: 'image',
+            title: 'Get Involved Image'
+        },
+        {
+            name: 'getInvolvedText',
+            type: 'text',
+            title: 'Get Involved Text'
         },
         {
             name: 'getInvolved',
