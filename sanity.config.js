@@ -2,6 +2,7 @@ import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
+import {colorInput} from '@sanity/color-input'
 
 
 // Define the actions that should be available for singleton documents
@@ -39,6 +40,7 @@ export default defineConfig({
           ]),
     }),
     visionTool(),
+    colorInput()
   ],
 
   schema: {

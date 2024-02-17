@@ -9,6 +9,33 @@ export default {
             title: "Title"
         },
         {
+            name: "visartsIcon",
+            type: "image",
+            title: "Visarts Logo"
+        },
+        // {
+        //     name: "colorScheme",
+        //     type: "document",
+        //     title: "Color Scheme",
+        //     fields: [
+        //         {
+        //             name: "primary",
+        //             type: "color",
+        //             title: "Primary Color"
+        //         },
+        //         {
+        //             name: "secondary",
+        //             type: "color",
+        //             title: "Secondary Color"
+        //         },
+        //         {
+        //             name: "accent",
+        //             type: "color",
+        //             title: "Accent Color"
+        //         }
+        //     ]
+        // },
+        {
             name: "image",
             type: 'image',
             title: "Image"
