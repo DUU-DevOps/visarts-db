@@ -1,9 +1,14 @@
 import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
+import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemas'
-import {myStructure} from './deskStructure'
 
+
+// Define the actions that should be available for singleton documents
+const singletonActions = new Set(["publish", "discardChanges", "restore"])
+
+// Define the singleton document types
+const singletonTypes = new Set(["settings"])
 
 
 export default defineConfig({
@@ -13,7 +18,28 @@ export default defineConfig({
   projectId: 'iwi3amti',
   dataset: 'production',
 
-  plugins: [deskTool(), visionTool(), deskTool({structure: myStructure})],
+  plugins: [
+    structureTool({
+      structure: (S) =>
+        S.list()
+          .title("Content")
+          .items([
+
+            S.listItem()
+              .title("Site Settings")
+              .id("siteSettings")
+              .child(
+                S.document()
+                  .schemaType("siteSettings")
+                  .documentId("siteSettings")
+              ),
+            S.documentTypeListItem("artist").title("Artist"),
+            S.documentTypeListItem("socialLink").title("Social Links"),
+            S.documentTypeListItem("people").title("People")
+          ]),
+    }),
+    visionTool(),
+  ],
 
   schema: {
     types: schemaTypes,
