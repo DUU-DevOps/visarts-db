@@ -59,6 +59,11 @@ export default {
             title: "Artist Spotlight Statement"
         },
         {
+            name: "spotlightImage",
+            type: "image",
+            title: "Artist Spotlight Image"
+        },
+        {
             name: "brownGalleryText",
             type: "text",
             title: "Brown Gallery Statement"
@@ -74,14 +79,34 @@ export default {
             title: "Brown Gallery Image"
         },
         {
-            name: 'getInvolvedImage',
+            name: 'figureDrawingImage',
             type: 'image',
-            title: 'Get Involved Image'
+            title: 'Figure Drawing Image'
         },
         {
-            name: 'getInvolvedText',
+            name: 'figureDrawingText',
             type: 'text',
-            title: 'Get Involved Text'
+            title: 'Figure Drawing Text'
+        },
+        {
+            name: 'eventsText',
+            type: 'text',
+            title: 'Events Text'
+        },
+        {
+            name: 'eventsLink',
+            type: 'string',
+            title: 'Events Link'
+        },
+        {
+            name: "meetUsImage",
+            type: "image",
+            title: "Meet Us Image"
+        },
+        {
+            name: "meetUsText",
+            type: "text",
+            title: "Meet Us Text"
         },
         {
             name: 'getInvolved',
