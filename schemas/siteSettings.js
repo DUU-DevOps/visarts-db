@@ -9,9 +9,9 @@ export default {
             title: "Title"
         },
         {
-            name: "visartsIcon",
-            type: "image",
-            title: "Visarts Logo"
+            name: "email",
+            type: "string",
+            title: "Email"
         },
         {
             name: "socialLinks",
@@ -44,69 +44,129 @@ export default {
             ]
         },
         {
-            name: "image",
-            type: 'image',
-            title: "Image"
+            name: "homepageInfo",
+            type: "document",
+            title: "Homepage Info",
+            fields: [
+                {
+                    name: "landingText",
+                    type: "text",
+                    title: "Landing Text"
+                },
+                {
+                    name: "visartsIcon",
+                    type: "image",
+                    title: "Visarts Logo"
+                },
+                {
+                    name: "landingImage",
+                    type: "image",
+                    title: "Landing Image"
+                },
+                {
+                    name: "spotlightText",
+                    type: "text",
+                    title: "Spotlight Text"
+                },
+                {
+                    name: "brownGalleryText",
+                    type: "text",
+                    title: "Brown Gallery Text"
+                },
+                {
+                    name: "figureDrawingText",
+                    type: "text",
+                    title: "Figure Drawing Text"
+                },
+                {
+                    name: "eventsText",
+                    type: "text",
+                    title: "Events Text"
+                },
+                {
+                    name: "brownGalleryImage",
+                    type: "image",
+                    title: "Brown Gallery Image"
+                },
+                {
+                    name: "figureDrawingImage",
+                    type: "image",
+                    title: "Figure Drawing Image"
+                }
+            ]
         },
         {
-            name: "statement",
-            type: "text",
-            title: "Statement"
+            name: "meetUs",
+            type: "document",
+            title: "Meet Us",
+            fields: [
+                {
+                    name: "text",
+                    type: "text",
+                    title: "Text"
+                },
+                {
+                    name: "image",
+                    type: "image",
+                    title: "Image"
+                }
+            ]
         },
         {
-            name: "spotlightText",
-            type: "text",
-            title: "Artist Spotlight Statement"
+            name: "brownGallery",
+            type: "document",
+            title: "Brown Gallery",
+            fields: [
+                {
+                    name: "text",
+                    type: "text",
+                    title: "Text"
+                },
+                {
+                    name: "link",
+                    type: "string",
+                    title: "Application Link"
+                },
+                {
+                    name: "image",
+                    type: "image",
+                    title: "Image"
+                }
+            ]
         },
         {
-            name: "spotlightImage",
-            type: "image",
-            title: "Artist Spotlight Image"
+            name: "artistSpotlight",
+            type: "document",
+            title: "Artist Spotlight",  
+            fields: [
+                {
+                    name: "text",
+                    type: "text",
+                    title: "Text"
+                },
+                {
+                    name: "image",
+                    type: "image",
+                    title: "Image"
+                }
+            ]
         },
         {
-            name: "brownGalleryText",
-            type: "text",
-            title: "Brown Gallery Statement"
-        },
-        {
-            name: "brownGalleryLink",
-            type: "string",
-            title: "Brown Gallery Application URL"
-        },
-        {
-            name: "brownGalleryImage",
-            type: "image",
-            title: "Brown Gallery Image"
-        },
-        {
-            name: 'figureDrawingImage',
-            type: 'image',
-            title: 'Figure Drawing Image'
-        },
-        {
-            name: 'figureDrawingText',
-            type: 'text',
-            title: 'Figure Drawing Text'
-        },
-        {
-            name: 'eventsText',
-            type: 'text',
-            title: 'Events Text'
-        },
-        {
-            name: 'eventsLink',
-            type: 'string',
-            title: 'Events Link'
-        },
-        {
-            name: "meetUsImage",
-            type: "image",
-            title: "Meet Us Image"
-        },
-        {
-            name: "meetUsText",
-            type: "text",
-            title: "Meet Us Text"
+            name: "events",
+            type: "document",
+            title: "Events",
+            fields: [
+                {
+                    name: "text",
+                    type: "text",
+                    title: "Text"
+                },
+                {
+                    name: "link",
+                    type: "string",
+                    title: "Link"
+                }
+            ]
         },
         {
             name: 'getInvolved',
