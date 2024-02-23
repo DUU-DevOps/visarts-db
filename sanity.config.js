@@ -36,7 +36,8 @@ export default defineConfig({
               ),
             S.documentTypeListItem("artist").title("Artist"),
             S.documentTypeListItem("socialLink").title("Social Links"),
-            S.documentTypeListItem("people").title("People")
+            S.documentTypeListItem("people").title("People"),
+            S.documentTypeListItem("gallery").title("Gallery")
           ]),
     }),
     visionTool(),

@@ -69,6 +69,11 @@ export default {
                     title: "Spotlight Text"
                 },
                 {
+                    name: "getInvolvedText",
+                    type: "text",
+                    title: "Get Involved Text"
+                },
+                {
                     name: "brownGalleryText",
                     type: "text",
                     title: "Brown Gallery Text"
@@ -82,6 +87,11 @@ export default {
                     name: "eventsText",
                     type: "text",
                     title: "Events Text"
+                },
+                {
+                    name: "getInvolvedImage",
+                    type: "image",
+                    title: "Get Involved Image"
                 },
                 {
                     name: "brownGalleryImage",
