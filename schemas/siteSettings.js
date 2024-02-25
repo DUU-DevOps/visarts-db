@@ -141,13 +141,18 @@ export default {
                     name: "image",
                     type: "image",
                     title: "Image"
+                },
+                {
+                    name: 'backgroundImage',
+                    type: 'image',
+                    title: 'Background Image'
                 }
             ]
         },
         {
             name: "artistSpotlight",
             type: "document",
-            title: "Artist Spotlight",  
+            title: "Artist Spotlight",
             fields: [
                 {
                     name: "text",

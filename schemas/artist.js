@@ -6,9 +6,14 @@ export default {
     title: 'Artist',
     fields: [
         {
+            name: 'title',
+            type: 'string',
+            title: 'Title (or name)'
+        },
+        {
         name: "name",
         type: 'string',
-        title: "Name"
+        title: "Subtitle (optional name, date, etc.)"
         },
         {
         name: "Image",
