@@ -49,6 +49,11 @@ export default {
             title: "Homepage Info",
             fields: [
                 {
+                    name: "landingTitle",
+                    type: "string",
+                    title: "Landing Title"
+                },
+                {
                     name: "landingText",
                     type: "text",
                     title: "Landing Text"

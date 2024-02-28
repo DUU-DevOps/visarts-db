@@ -35,7 +35,6 @@ export default defineConfig({
                   .documentId("siteSettings")
               ),
             S.documentTypeListItem("artist").title("Artist"),
-            S.documentTypeListItem("socialLink").title("Social Links"),
             S.documentTypeListItem("people").title("People"),
             S.documentTypeListItem("album").title("Photo Albums")
           ]),

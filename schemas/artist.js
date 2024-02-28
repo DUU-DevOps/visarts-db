@@ -1,4 +1,3 @@
-import clippedLink from './clippedLink.js'
 
 export default {
     name: 'artist',
