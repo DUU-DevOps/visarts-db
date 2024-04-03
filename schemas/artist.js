@@ -2,7 +2,7 @@
 export default {
     name: 'artist',
     type: 'document',
-    title: 'Artist',
+    title: 'Galleries',
     fields: [
         {
             name: 'title',

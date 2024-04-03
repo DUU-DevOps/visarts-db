@@ -18,7 +18,10 @@ export default {
                     type: 'image',
                     name: "Photo",
                 }
-            ]
+            ],
+            options: {
+                layout: 'grid'
+            }
         }
     ]
 }

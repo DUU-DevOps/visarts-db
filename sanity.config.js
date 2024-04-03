@@ -34,7 +34,7 @@ export default defineConfig({
                   .schemaType("siteSettings")
                   .documentId("siteSettings")
               ),
-            S.documentTypeListItem("artist").title("Artist"),
+            S.documentTypeListItem("artist").title("Galleries"),
             S.documentTypeListItem("people").title("People"),
             S.documentTypeListItem("album").title("Photo Albums")
           ]),
