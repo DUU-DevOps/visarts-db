@@ -22,6 +22,11 @@ export default {
             name: "bio",
             type: "text",
             title: "Bio"
+        },
+        {
+            name: "order",
+            type: "number",
+            title: "Order (from left to right and top to bottom)"
         }
     ]
   }
