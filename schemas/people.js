@@ -14,11 +14,6 @@ export default {
             title: "Title"
         },
         {
-            name: "image",
-            type: "image",
-            title: "Image"
-        },
-        {
             name: "bio",
             type: "text",
             title: "Bio"
