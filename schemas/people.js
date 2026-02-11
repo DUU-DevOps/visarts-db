@@ -4,6 +4,11 @@ export default {
     title: 'People',
     fields: [
         {
+                name: "Image",
+                type: "image",
+                title: "Image"
+        },
+        {
             name: "name",
             type: 'string',
             title: "Name"
